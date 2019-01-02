@@ -1,2 +1,6 @@
 Hello Text File being pushed
 Hello again
+
+Line added in Branch One
+
+Line added in Master
