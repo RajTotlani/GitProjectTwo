@@ -1,0 +1,197 @@
+[1mdiff --git a/Development.config b/Development.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aa341f3[m
+[1m--- /dev/null[m
+[1m+++ b/Development.config[m
+[36m@@ -0,0 +1,190 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<appSettings>[m
+[32m+[m
+[32m+[m[32m  <add key="Development Mode Security Override" value="true" />[m
+[32m+[m[32m  <add key="copyright" value="Development Environment SQL"/>[m
+[32m+[m[32m  <add key="Watermark" value="GA Custom DEVELOPMENT WatchDog"/>[m
+[32m+[m
+[32m+[m[32m  <add key="version" value="v5.4.3 WatchDog"/>[m
+[32m+[m[32m  <add key="Watch Dog Enabled" value="false"/>[m
+[32m+[m[32m  <add key="Watch Dog Users to Include" value="CraigK,PaveyK,RuckerG,KeenanJ"/>[m
+[32m+[m[32m  <!--<add key="Watch Dog Pages to Include" value="SubmissionList.aspx "/>-->[m
+[32m+[m[32m  <add key="Watch Dog Pages to Exclude" value="default.aspx"/>[m
+[32m+[m
+[32m+[m[32m  <!--  begin DEV section -->[m
+[32m+[m[32m  <add key="main DB Connection" value="server=DGACLAXVMSQL01;database=premium;user id='[uid encrypt]';password='[pass encrypt]'"></add>[m
+[32m+[m[32m  <add key="main DB Connection uid" value="m6KgJIceiDr8RZmoyflvsQ=="/>[m
+[32m+[m[32m  <add key="main DB Connection pass" value="VeA6fbuvITO9viXsg9weSA=="/>[m
+[32m+[m[32m  <add key="main DB DBMS" value="SqlClientParmed"></add>[m
+[32m+[m[32m  <add key="main DB Concurrency" value="Key"></add>[m
+[32m+[m
+[32m+[m[32m  <add key="mainnoforce DB Connection" value="server=DGACLAXVMSQL01;database=premium;user id='[uid encrypt]';password='[pass encrypt]'"></add>[m
+[32m+[m[32m  <add key="mainnoforce DB Connection uid" value="m6KgJIceiDr8RZmoyflvsQ=="/>[m
+[32m+[m[32m  <add key="mainnoforce DB Connection pass" value="VeA6fbuvITO9viXsg9weSA=="/>[m
+[32m+[m[32m  <add key="mainnoforce DB DBMS" value="SqlClientParmed"></add>[m
+[32m+[m[32m  <add key="mainnoforce DB Concurrency" value="Key"></add>[m
+[32m+[m
+[32m+[m[32m  <!-- Blob database connection-->[m
+[32m+[m[32m  <!--<add key="ldssql DB Connection" value="server=TGACLAXMSQL04;database='LargeDataStorage-dev';user id='blob-admin';password='a@D,D15B1L'"></add>[m
+[32m+[m[32m  <add key="ldssql DB DBMS" value="SqlClient"></add>[m
+[32m+[m[32m  <add key="ldssql DB Concurrency" value="Key"></add>-->[m
+[32m+[m
+[32m+[m[32m  <!-- Forms Library database connection-->[m
+[32m+[m[32m  <add key="formslibrary DB Connection" value="server=TGACLAXMSQL04;database=FormsLibrary-dev;;user id='[uid encrypt]';password='[pass encrypt]'"></add>[m
+[32m+[m[32m  <add key="formslibrary DB Connection uid" value="UJ4GcWXu4YF8WMxuCQCalA=="/>[m
+[32m+[m[32m  <add key="formslibrary DB Connection pass" value="Q64IeXIr/gEdrPFFlypIKA=="/>[m
+[32m+[m[32m  <add key="formslibrary DB DBMS" value="SqlClientParmed"></add>[m
+[32m+[m[32m  <add key="formslibrary DB Concurrency" value="Key"></add>[m
+[32m+[m
+[32m+[m[32m  <add key="secure DB Connection" value="Server='SYB_DEV';Port=5000;Database='secure';UID='[uid encrypt]';PWD='[pass encrypt]';TextSize=4096000;NamedParameters=true;Min Pool Size=1;Pooling=true;Max Pool Size=3;Application Name='CUSPSecureASE';TrimSpaces=0"/>[m
+[32m+[m[32m  <add key="secure DB Connection uid" value="Q3OLmzSLtoM/rFJAxnEUrg=="/>[m
+[32m+[m[32m  <!--<add key="secure DB Connection uid" value="Yq4dIDkEmWKXN5QWaQwtog=="/>-->[m
+[32m+[m[32m  <add key="secure DB Connection pass" value="NFDL/mnX8aAAdoEv+hb8RA=="/>[m
+[32m+[m[32m  <add key="secure DB DBMS" value="ASENoForceUser"></add>[m
+[32m+[m[32m  <add key="secure DB Concurrency" value="Key"></add>[m
+[32m+[m
+[32m+[m[32m  <add key="sequence DB Connection" value="server=DGACLAXVMSQL01;database=premium;user id='[uid encrypt]';password='[pass encrypt]'"></add>[m
+[32m+[m[32m  <add key="sequence DB Connection uid" value="m6KgJIceiDr8RZmoyflvsQ=="/>[m
+[32m+[m[32m  <add key="sequence DB Connection pass" value="VeA6fbuvITO9viXsg9weSA=="/>[m
+[32m+[m[32m  <add key="sequence DB DBMS" value="SqlClientParmed"></add>[m
+[32m+[m[32m  <add key="sequence DB Concurrency" value="Key"></add>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  <!--<add key="sequence DB Connection" value="Server='SYB_DEV';Port=5000;Database='ius';UID='[uid encrypt]';PWD='[pass encrypt]';TextSize=4096000;NamedParameters=true;Min Pool Size=1;Pooling=true;Max Pool Size=3;Application Name='CUSPSequenceASE';TrimSpaces=0"/>[m
+[32m+[m[32m  <add key="sequence DB Connection uid" value="Q3OLmzSLtoM/rFJAxnEUrg=="/>[m
+[32m+[m[32m  <add key="sequence DB Connection pass" value="NFDL/mnX8aAAdoEv+hb8RA=="/>[m
+[32m+[m[32m  <add key="sequence DB DBMS" value="ASENoForceUser"></add>[m
+[32m+[m[32m  <add key="sequence DB Concurrency" value="Key"></add>-->[m
+[32m+[m
+[32m+[m[32m  <!-- Combined Premium and Losses database connection-->[m
+[32m+[m[32m  <!--<add key="combined DB Connection" value="server=SQL_RPT;database=RPT;user id='crystaladmin';password='crystaladmin'"></add>[m
+[32m+[m		[32m<add key="combined DB Connection uid" value="UJ4GcWXu4YF8WMxuCQCalA=="/>[m
+[32m+[m		[32m<add key="combined DB Connection pass" value="kbauJUQZSCf0xm2t5/wMlw=="/>[m
+[32m+[m		[32m<add key="combined DB DBMS" value="SqlClient"></add>[m
+[32m+[m		[32m<add key="combined DB Concurrency" value="Key"></add>-->[m
+[32m+[m
+[32m+[m[32m  <add key="Form Specimen Service" value="https://dev.gamcustom.info/GACPublicWebServices/GetSpecimen.ashx?f={0}&amp;c={1}"/>[m
+[32m+[m[32m  <add key="Enable Specimen Links" value="true"/>[m
+[32m+[m[32m  <add key="Enable Letter Specimen Links" value="true"/>[m
+[32m+[m
+[32m+[m[32m  <add key="ClearanceIUS" value="https://dev.gamcustom.info/ClearanceIUS/Clearance.aspx?insuredcode={0}&amp;subnum={1}&amp;action=edit&amp;scope={2}"/>[m
+[32m+[m[32m  <add key="Contractor" value="https://dev.gamcustom.info/ClearanceIUS/Contractor.aspx?contractor_code={0}&amp;insuredcode={1}&amp;subnum={2}&amp;action=edit"/>[m
+[32m+[m
+[32m+[m[32m  <!-- For Risk summary Report connection parameters, also Used in DataPipe.aspx.vb for connecting to DB	-->[m
+[32m+[m[32m  <add key="database" value="ius"/>[m
+[32m+[m[32m  <add key="userid" value="[uid encrypt]"/>[m
+[32m+[m[32m  <add key="userid uid" value="Yq4dIDkEmWKXN5QWaQwtog=="/>[m
+[32m+[m[32m  <add key="password" value="[pass encrypt]"/>[m
+[32m+[m[32m  <add key="password pass" value="NFDL/mnX8aAAdoEv+hb8RA=="/>[m
+[32m+[m[32m  <add key="server" value="SYB_DEV"/>[m
+[32m+[m[32m  <add key="dbparm" value=""/>[m
+[32m+[m
+[32m+[m[32m  <add key="producerGAPRIS" value="392766,392767,466049,401678,401673,401699,401733"/>[m
+[32m+[m[32m  <add key="producerHQGAPRIS" value="19,20"/>[m
+[32m+[m[32m  <!--<add key="retailProducerHQAon" value="4"/>[m
+[32m+[m[32m  <add key="coverageFormAon" value="USX8004.02.18"/>-->[m
+[32m+[m[32m  <add key="retailProducerHQMarsh" value="40,41,42,93"/>[m
+[32m+[m[32m  <add key="retailProducerQSG" value="470"/>[m
+[32m+[m[32m  <add key="coverageFormMarsh" value="GAM8004.02.14"/>[m
+[32m+[m[32m  <!--<add key="triaCeaseDate" value="12/31/2014"/>-->[m
+[32m+[m[32m  <add key="searchURL" value="www.google.com"/>[m
+[32m+[m[32m  <!-- enter reportExperience to true to enable link on General Info -->[m
+[32m+[m[32m  <add key="reportExperience" value="true"/>[m
+[32m+[m[41m  [m
+[32m+[m[32m  <add key="reportProgramId" value="46"/>[m
+[32m+[m[32m  <add key="reportExperienceText" value="Report #181 by Insured"/>[m
+[32m+[m[32m  <add key="reportExperienceRisk" value="Report #182 by Risk"/>[m
+[32m+[m[32m  <add key="CasualtyBulletinBoardURL" value="http://isp.gamcustom.local/dept/casualty/Casualty Bulletin Board/Forms/AllItems.aspx"/>[m
+[32m+[m
+[32m+[m[32m  <!-- enter emailRecipient value to override broker/contact email address; blank in production -->[m
+[32m+[m[32m  <add key="emailRecipient" value=""/>[m
+[32m+[m[32m  <!-- enter emailSubject value to prepend email subject line; blank in production -->[m
+[32m+[m[32m  <add key="emailSubject" value="DEMO PURPOSES ONLY - "/>[m
+[32m+[m[32m  <add key="emailConstructionWrapupEmail" value="craig.kanemoto@gamcustom.com"/>[m
+[32m+[m[32m  <add key="emailConstructionWrapupRecipient" value="Mr. Kirk Bull"/>[m
+[32m+[m[32m  <!-- enter emailConstructionWrapupCC value to override UW; blank in production -->[m
+[32m+[m[32m  <add key="emailConstructionWrapupCC" value="cmkanemoto@hotmail.com"/>[m
+[32m+[m[32m  <!-- for list of clone pattern tables - Quote.Clone() method; do not copy reinsurance, attachments, terrorism forms -->[m
+[32m+[m[32m  <add key="clonePatternRenewal" value="11111111111111111111000110011111"/>[m
+[32m+[m[32m  <add key="Default LossHistory Year Count" value="3"/>[m
+[32m+[m[32m  <add key="summarySubjectivity" value="NOTE: TO LIGHTEN THE DOCMENTATION ON THE INSURED'S END, WE ARE WILLING TO ADDRESS MOST OF THE ABOVE ISSUES DURING A CONFERENCE CALL."/>[m
+[32m+[m[32m  <add key="priorPendingDefault" value="The Retroactive Date stated in the Declarations page of this Policy"/>[m
+[32m+[m[32m  <add key="treatyAtlanta20xx" value="-1"/>[m
+[32m+[m
+[32m+[m[32m  <add key="factsheetUnderwriterTeams" value="1,2"/>[m
+[32m+[m[32m  <add key="defaultUnderwriterTeam" value="1"/>[m
+[32m+[m[32m  <add key="showUnderwriterTeamForUsers" value="4442,9549"/>[m
+[32m+[m[32m  <add key="factSheetDisclaimer" value="This scoring system is intended as a preliminary statistically-based process to help prioritize the inventory of pending submissions.  It is not a replacement for a detailed review of the data and underwriting of the risk performed by an experienced underwriter."/>[m
+[32m+[m
+[32m+[m[32m  <!-- 'default uderwriter managers' is a comma separated list of the underwriter[m
+[32m+[m			[32m  managers who will manage any mis-configured underwrters.  The tbl_uw_manager_map table[m
+[32m+[m[32m              contains the underwriter to manager relationships.  If an underwriter is absent from this[m
+[32m+[m[32m              table then they will not have a manager and there would be no one to approve their quotes.[m
+[32m+[m			[32m  The managers listed here will see these underwriter's quote in the ApprovalList page.[m[41m [m
+[32m+[m[32m              9438 = Kirk Bull.[m
+[32m+[m		[32m-->[m
+[32m+[m[32m  <add key="default underwriter managers" value="9438"/>[m
+[32m+[m[32m  <add key="secure audit report managers" value="9438,9549"/>[m
+[32m+[m[32m  <add key="clearance only underwriter" value="9849"/>[m
+[32m+[m
+[32m+[m[32m  <add key="Enable URL Encryption" value="true" />[m
+[32m+[m
+[32m+[m[32m  <!--eMail settings for the POLICY_NUMBERs running low -->[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Server" value="[address encrypt]"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Server address" value="CALej17khZWMeN/Ejr/bHqTOQEegAE7zRcEJ5p+7mOE="/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail From" value="craig.kanemoto"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Reply To" value="craig.kanemoto@gamcustom.com"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail To" value="craig.kanemoto@gamcustom.com"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Subject" value="POLICY_NUMBERs running low (DEV, Please Ignore)"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail CC" value=""/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail BCC" value=""/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Priority" value="High"/>[m
+[32m+[m[32m  <add key="POLICY_NUMBER Warning Mail Domain" value="@gamCustom.com"/>[m
+[32m+[m
+[32m+[m[32m  <!--eMail settings for the CUSTOMER_NUMBERs running low -->[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Server" value="[address encrypt]"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Server address" value="CALej17khZWMeN/Ejr/bHqTOQEegAE7zRcEJ5p+7mOE="/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail From" value="craig.kanemoto"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Reply To" value="craig.kanemoto@gamcustom.com"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail To" value="craig.kanemoto@gamcustom.com"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Subject" value="Customer numbers running low (DEV, Please Ignore)"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail CC" value=""/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail BCC" value=""/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Priority" value="High"/>[m
+[32m+[m[32m  <add key="CUSTOMER_NUMBER Warning Mail Domain" value="@gamCustom.com"/>[m
+[32m+[m
+[32m+[m[32m  <!-- Web service URLs, userid and password -->[m
+[32m+[m[32m  <add key="2 VFI Service URL" value="https://dev.gamcustom.info/GACIssuanceServices/VariableFormInformation.svc"/>[m
+[32m+[m[32m  <add key="2 GACWebService UserId" value="[UID encrypt]"/>[m
+[32m+[m[32m  <add key="2 GACWebService UserId UID" value="kQ+jiR10PwlgvKM/jyH38jjBIUsjUB08g81N/3C6P34="/>[m
+[32m+[m[32m  <add key="2 GACWebService Password" value="[PWD encrypt]"/>[m
+[32m+[m[32m  <add key="2 GACWebService Password PWD" value="myj43emwcEhM6PA1r0lxtA=="/>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  <!--eMail settings for the error in Address verification web service. DEV and TEST can be configured to the developer/BSA and Production can be configured to customer support -->[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Server" value="[address encrypt]"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Server address" value="CALej17khZWMeN/Ejr/bHqTOQEegAE7zRcEJ5p+7mOE="/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail From" value="nirav.shah"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Reply To" value="nirav.shah@gamcustom.com"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail To" value="nirav.shah@gamcustom.com"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Subject" value="GAC VFI Service Notification (DEV)"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail CC" value=""/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail BCC" value=""/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Priority" value="Low"/>[m
+[32m+[m[32m  <add key="2 VFI Service Error Mail Domain" value="@gamCustom.com"/>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  <add key="Download File Active" value="false"/>[m
+[32m+[m[32m  <add key="Download File Path" value="\\gaclaxmfs03\develop\isdev\prog_dev\testexcl"/>[m
+[32m+[m[32m  <add key="Download File Impersonate User" value="[uid encrypt]"/>[m
+[32m+[m[32m  <add key="Download File Impersonate User uid" value="ZQi11CUASuqq1pe3+yLqpQ=="/>[m
+[32m+[m[32m  <add key="Download File Impersonate Password" value="[pwd encrypt]"/>[m
+[32m+[m[32m  <add key="Download File Impersonate Password pwd" value="toPOwacOnn0phrxxR8qopg=="/>[m
+[32m+[m[32m  <add key="Download File Impersonate Domain" value="gamcustom"/>[m
+[32m+[m
+[32m+[m[32m  <!-- Show link to add PDF for externally created forms, for a department of the underwriter -->[m
+[32m+[m[32m  <add key="35 Allow External Forms" value="1"/>[m
+[32m+[m[41m  [m
+[32m+[m[32m</appSettings >[m
+\ No newline at end of file[m
