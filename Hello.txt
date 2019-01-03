@@ -6,3 +6,7 @@ Line added in Branch One
 Line added in Master
 
 Hello Hello
+
+Hello One
+
+Hello Master
